@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Montserrat } from "next/font/google";
 import "./styles/globals.css"
 
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-jetbrains",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
 
 
 export const metadata: Metadata = {
@@ -15,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${jetbrains.variable} ${montserrat.variable}`}>
       <body
-       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className= "antialiased"
       >
         {children}
       </body>
