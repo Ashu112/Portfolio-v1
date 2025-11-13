@@ -29,6 +29,3 @@ body {
   font-family: var(--font-mono);
 }
 
-.bg-global{
-    background: radial-gradient(circle at 90% 60%, #7F00FF, #0F0F0F);
-}
