@@ -9,7 +9,7 @@ function Header() {
              <Image src="/images/logo_black.png" alt="Logo" width={100} height={100} className="rounded-md" />
         </Link>
        
-      <div className="flex gap-8 text-white text-4xl font-medium font-sans">
+      <div className="flex gap-8 text-white text-3xl font-medium font-sans">
         <Link href="/">About</Link>
           <Link href="/">Projects</Link>
          <Link href="/">Resume</Link>
