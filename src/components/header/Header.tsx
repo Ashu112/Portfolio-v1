@@ -1,15 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 function Header() {
   return (
-    <div className="flex justify-between px-10">
+    <div className="flex justify-between items-center px-10">
         <Link href="/">
              <Image src="/images/logo.png" alt="Logo" width={100} height={100} className="rounded-md" />
         </Link>
        
-      <div></div>
-      <div></div>
+      <div className="flex gap-8 text-white text-3xl font-medium font-sans">
+        <Link href="/">About</Link>
+         <Link href="/">Resume</Link>
+          <Link href="/">Blogs</Link>
+      </div>
+      <Link href="/" className="text-yellow-200 font-medium text-3xl font-sans">Contact Me</Link>
     </div>
   );
 }
