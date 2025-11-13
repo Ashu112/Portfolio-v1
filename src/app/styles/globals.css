@@ -17,6 +17,8 @@ body {
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(23, 2, 2);
+  
 }
 
 .font-sans {
