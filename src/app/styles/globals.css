@@ -18,7 +18,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(8, 8, 8);
-  
 }
 
 .font-sans {
@@ -28,4 +27,3 @@ body {
 .font-mono {
   font-family: var(--font-mono);
 }
-
