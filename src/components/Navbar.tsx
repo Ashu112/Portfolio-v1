@@ -1,10 +1,11 @@
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Sun } from "lucide-react";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between px-10">
+    <div className="mt-10 flex items-center justify-between px-10">
       <Link href="/">
         <Image
           src="/images/logo_green.png"
@@ -25,9 +26,7 @@ function Header() {
         <Link href="/">
           <Mail className="mt-2 size-7" />
         </Link>
-        <button className="cursor-pointer hover:text-white">
-          <Sun className="mt-2 size-7" />
-        </button>
+        <ThemeSwitch />
       </div>
     </div>
   );

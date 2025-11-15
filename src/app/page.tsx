@@ -1,10 +1,8 @@
-import Header from "@/components/header/Header";
-import Hero from "@/components/hero/Hero";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="bg-global mt-12 min-h-screen">
-      <Header />
+    <div className="bg-global min-h-screen">
       <Hero />
     </div>
   );

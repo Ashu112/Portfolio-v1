@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Montserrat } from "next/font/google";
 import "./styles/globals.css";
+import { Provider } from "@/app/provider";
+import Navbar from "@/components/Navbar";
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
@@ -27,8 +29,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jetbrains.variable} ${montserrat.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html
+      lang="en"
+      className={`${jetbrains.variable} ${montserrat.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="antialiased">
+        <Provider>
+          <Navbar />
+          <main>{children}</main>
+        </Provider>
+      </body>
     </html>
   );
 }
