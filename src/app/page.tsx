@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="bg-global min-h-screen">
+    <div className="min-h-screen antialiased">
       <Hero />
     </div>
   );

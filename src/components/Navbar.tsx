@@ -1,14 +1,21 @@
+"use client";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import { useTheme } from "next-themes";
 
 function Header() {
+  const { resolvedTheme } = useTheme();
   return (
     <div className="mt-10 flex items-center justify-between px-10">
       <Link href="/">
         <Image
-          src="/images/logo_green.png"
+          src={
+            resolvedTheme === "light"
+              ? "/images/logo_white_G.png"
+              : "/images/logo_green.png"
+          }
           alt="Logo"
           width={100}
           height={100}
@@ -16,7 +23,7 @@ function Header() {
         />
       </Link>
 
-      <div className="flex gap-8 font-sans text-3xl font-medium text-white">
+      <div className="flex gap-8 font-sans text-3xl font-medium">
         <Link href="/">About</Link>
         <Link href="/">Projects</Link>
         <Link href="/">Resume</Link>

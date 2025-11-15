@@ -8,7 +8,7 @@ function Hero() {
         <h2 className="text-3xl font-semibold text-gray-300">
           Software Development Engineer
         </h2>
-        <p className="text-xl leading-8 text-white">
+        <p className="text-xl leading-8">
           I'm a Software developer from IIT Guwahati with 3+ years of experience
           creating fast, scalable, and user-focused web applications. I've
           worked across e-commerce, security, and AI-driven platforms using
