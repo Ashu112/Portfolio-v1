@@ -7,7 +7,7 @@ function Header() {
     <div className="flex justify-between items-center px-10">
       <Link href="/">
         <Image
-          src="/images/logo_black.png"
+          src="/images/logo_green.png"
           alt="Logo"
           width={100}
           height={100}
