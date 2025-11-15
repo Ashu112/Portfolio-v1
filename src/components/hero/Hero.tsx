@@ -21,7 +21,7 @@ function Hero() {
           src="/images/portfolio.jpg"
           alt="Profile"
           fill
-          className="rounded-3xl object-cover shadow-xl"
+          className="rounded-4xl object-cover shadow-xl"
         />
       </div>
     </div>
