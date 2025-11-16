@@ -3,9 +3,9 @@ import Image from "next/image";
 function Hero() {
   return (
     <div className="flex items-center justify-between gap-12 px-16 py-24">
-      <div className="flex max-w-3xl flex-col gap-6">
+      <div className="flex max-w-3xl flex-col gap-4">
         <h1 className="text-6xl font-bold text-green-400">Ashutosh Kumar</h1>
-        <h2 className="text-3xl font-semibold text-gray-300">
+        <h2 className="text-3xl font-semibold text-gray-400">
           Software Development Engineer
         </h2>
         <p className="text-xl leading-8">
